@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="photos/favicon.png" type="image/png" />
+  <!-- responsive webpage -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- jqeury modal -->
+  <script src="https://cdn.statically.io/gh/Marrs-jin/WebDesign/main/modal_func.js"></script>
+  <link rel="stylesheet" href="https://cdn.statically.io/gh/Marrs-jin/WebDesign/main/modal_style.css">
+  <style>
+    @media (max-width:1300px) {
+
+      /* For mobile phones: */
+      container {
+        width: 100%;
+        padding: 0px;
+      }
+
+      iframe {
+        width: 100%;
+        padding: 0px;
+      }
+    }
+
+    /* for print button */
+    .button {
+      background-color: rgba(0, 200, 255, 1);
+      border: none;
+      color: black;
+      padding: 3px 3px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      font-family: Calibri, sans-serif;
+      margin: 1px 1px;
+      cursor: pointer;
+      width: 65;
+      height: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px #999;
+    }
+
+    .button:hover {
+      background-color: rgba(30, 144, 255, 1);
+    }
+
+    .button:active {
+      background-color: rgba(16, 78, 139, 1);
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .button-clicked {
+      background-color: rgb(50, 92, 79)
+    }
+
+    .button:focus {
+      background-color: rgba(30, 144, 255, 1);
+      /* color: whitesmoke; */
+      text-shadow: whitesmoke;
+      /* border-style: double; */
+      box-shadow: 0 3px #666;
+      transform: translateY(2px);
+      color: black;
+    }
+
+    .btn {
+      border: none;
+      width: 80px;
+      height: 40px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn2 {
+      background-color: rgba(0, 191, 255, 1);
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 5px;
+
+    }
+
+    .btn2:hover {
+      background-color: DodgerBlue;
+    }
+
+    a.btn2{
+      background: #4CAF50;
+      -webkit-appearance: none;
+    }
+    a.btn2:hover{
+      background-color: #2a893e;
+      text-decoration: none;
+      -webkit-appearance: none;
+    }
+    input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+
+    .btn-primary {
+      background-color: rgba(0, 200, 255, 1);
+      font-size: 18px;
+      /* width: 45px; */
+    }
+
+    .btn:focus {
+      background-color: rgba(30, 144, 255, 1);
+      box-shadow: 2px 2px rgba(27, 27, 27, 0.80);
+      transform: translateY(3px);
+    }
+
+    /* to center the website- will center the website on screens that are wider than 500px. On screens that are less than 500px wide, it will span the whole of the page*/
+    .content {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .nav-tabs {
+      background-color: #f2f2f2;
+    }
+
+    .btn1 {
+      background-color: rgba(0, 191, 255, 1);
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 5px;
+
+    }
+
+    /* Darker background on mouse-over */
+    .btn1:hover {
+      background-color: DodgerBlue;
+    }
+
+    .jumbotron {
+      padding: 0.1rem 0.1rem;
+    }
+
+    .div1 {
+      text-align: justify;
+      text-justify: inter-word;
+      margin-bottom: 5px;
+      margin-top:15px;
+      padding:2px;
+    }
+    .div2 {
+      text-align: justify;
+      text-justify: inter-word;
+      margin-bottom: 5px;
+      /* margin-bottom: 5px;
+      margin-top:5px;
+      padding:2px; */
+    }
+    .div3 {
+      text-align: justify;
+      text-justify: inter-word;
+      margin-bottom: 10px;
+      margin-top:10px;
+      padding:2px;
+    }
+  </style>
+  <style>
+    /* .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+          } */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  </style>
+  <style>
+    /* sets the color of the background of the popup */
+    .blocker {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .jqmodal {
+      display: none;
+      vertical-align: middle;
+      position: relative;
+      z-index: 2;
+
+      /* determines posiition of modal pop up */
+
+      left: 25% !important;
+      bottom: 10% !important;
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+      .jqmodal {
+        left: 0% !important;
+        bottom: 0% !important;
+      }
+    }
+  </style>
+
+  <div id="PgInfo" class="jqmodal" style = " bottom: 0% !important;">
+    <!-- <ul>
+  <p><li>Click on the button for the state (for example, 6d<sub>3/2</sub>) to get the radiative lifetime of the state and all contributing transition rates
+    and respective branching ratios. </li>
+    <li>The matrix elements and wavelengths are listed for convenience, the same values as in the matrix element pages. </li>
+    <li>Click on the Print button to print the tables. </li>
+    <li>Click on the Excel button to download the data. Note that the downloaded file will also contain
+    separate columns of the values and their uncertainties for all properties. </li></p>
+  </ul>  -->
+    <!-- <a href = "about.html" target="_blank"> Learn more about these data</a>
+  <p class="" style="margin: 4px;"></p>  -->
+    <p style="text-align: justify; text-justify: inter-word;">
+    <p>Select "Matrix elements", "Transition rates", "Polarizabilities", or "Other data" tab and then click on the
+        atom/ion button to display the data. Alternatively, select one of these options from the menu on top of the page
+        and then select an atom/ ion.</p>
+
+        <p>Click on "Learn more" button or "About the Project" for details on available data and computational methods.</p>
+
+        <p>Use "Feedback" button to send us your comments/ suggestions.</p>
+    </ul>
+    </p>
+
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+  <script>
+    // function readfile() {
+    //   alert(document.getElementById('iframe').contentDocument.body.firstChild.innerHTML);
+    // }
+
+    //initiates print once content has been loaded into iframe
+    function print() {
+      //  document.getElementById('iframe').contentWindow.print();
+      var objFra = document.getElementById('iframe');
+      objFra.contentWindow.focus();
+      objFra.contentWindow.print();
+    }
+
+    function showTransitions(id) {
+      // to show the selected Element name on top of the page
+      var element = document.querySelector("#element");
+      // + " <I>[Uncertainties are given in parenthesis]</I>";
+      // document.getElementById("iframe").src = "Li.txt"
+
+      switch (id.innerHTML) {
+        case "Li":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "Li.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "LiPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "LiTranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "LiOther.html";
+          }
+          break;
+
+        case "Na":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "Na.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "NaPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "NaTranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "NaOther.html";
+          }
+          break;
+
+        case "K ":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "K.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "KPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "KTranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "KOther.html";
+          }
+          break;
+
+        case "Rb":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "Rb.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "RbPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "RbTranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "RbOther.html";
+          }
+          break;
+
+        case "Cs":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "Cs.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "Polarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "CsTranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "CsOther.html";
+          }
+          break;
+
+        case "Fr":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "Fr.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "FrPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "FrTranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "FrOther.html";
+          }
+          break;
+
+        case "Be<sup>+</sup>":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "BeII.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "BePolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "BeIITranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "BeIIOther.html";
+          }
+          break;
+
+        case "Mg<sup>+</sup>":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "MgII.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "MgPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "MgIITranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "MgIIOther.html";
+          }
+          break;
+
+        case "Ca<sup>+</sup>":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "CaII.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "CaPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "CaIITranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "CaIIOther.html";
+          }
+          break;
+
+        case "Sr<sup>+</sup>":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "SrII.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "SrPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "SrIITranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "SrIIOther.html";
+          }
+          break;
+
+        case "Ba<sup>+</sup>":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "BaII.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "BaPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "BaIITranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "BaIIOther.html";
+          }
+          break;
+
+        case "Ra<sup>+</sup>":
+          if (document.getElementById("nav-home-tab").classList.contains('active')) {
+            // document.getElementById("demo").innerHTML = 'xxxxxxxxx';
+            location.href = "RaII.html";
+          }
+          else if (document.getElementById("nav-profile-tab").classList.contains('active')) {
+            location.href = "RaPolarizability.html";
+          }
+          else if (document.getElementById("nav-profile-tabTR").classList.contains('active')) {
+            location.href = "RaIITranAuto.html";
+          }
+          else if (document.getElementById("nav-profile-tabOV").classList.contains('active')) {
+            location.href = "RaIIOther.html";
+          }
+          break;
+      }
+    }
+
+  </script>
+  <title>Transition Matrix Elements</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link active" href="index.html" style="font-weight: bold">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style='color: white'>Matrix elements</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Li.html">Li</a>
+            <a class="dropdown-item" href="Na.html">Na</a>
+            <a class="dropdown-item" href="K.html">K</a>
+            <a class="dropdown-item" href="Rb.html">Rb</a>
+            <a class="dropdown-item" href="Cs.html">Cs</a>
+            <a class="dropdown-item" href="Fr.html">Fr</a>
+            <a class="dropdown-item" href="BeII.html">Be+</a>
+            <a class="dropdown-item" href="MgII.html">Mg+</a>
+            <a class="dropdown-item" href="CaII.html">Ca+</a>
+            <a class="dropdown-item" href="SrII.html">Sr+</a>
+            <a class="dropdown-item" href="BaII.html">Ba+</a>
+            <a class="dropdown-item" href="RaII.html">Ra+</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: white">Transition rates</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="LiTranAuto.html">Li</a>
+            <a class="dropdown-item" href="NaTranAuto.html">Na</a>
+            <a class="dropdown-item" href="KTranAuto.html">K</a>
+            <a class="dropdown-item" href="RbTranAuto.html">Rb</a>
+            <a class="dropdown-item" href="CsTranAuto.html">Cs</a>
+            <a class="dropdown-item" href="FrTranAuto.html">Fr</a>
+            <a class="dropdown-item" href="BeIITranAuto.html">Be+</a>
+            <a class="dropdown-item" href="MgIITranAuto.html">Mg+</a>
+            <a class="dropdown-item" href="CaIITranAuto.html">Ca+</a>
+            <a class="dropdown-item" href="SrIITranAuto.html">Sr+</a>
+            <a class="dropdown-item" href="BaIITranAuto.html">Ba+</a>
+            <a class="dropdown-item" href="RaIITranAuto.html">Ra+</a>
+          </div>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style='color: white'>Polarizabilities</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="LiPolarizability.html">Li</a>
+            <a class="dropdown-item" href="NaPolarizability.html">Na</a>
+            <a class="dropdown-item" href="KPolarizability.html">K</a>
+            <a class="dropdown-item" href="RbPolarizability.html">Rb</a>
+            <a class="dropdown-item" href="Polarizability.html">Cs</a>
+            <a class="dropdown-item" href="FrPolarizability.html">Fr</a>
+            <a class="dropdown-item" href="BePolarizability.html">Be+</a>
+            <a class="dropdown-item" href="MgPolarizability.html">Mg+</a>
+            <a class="dropdown-item" href="CaPolarizability.html">Ca+</a>
+            <a class="dropdown-item" href="SrPolarizability.html">Sr+</a>
+            <a class="dropdown-item" href="BaPolarizability.html">Ba+</a>
+            <a class="dropdown-item" href="RaPolarizability.html">Ra+</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style='color: white'>Other data</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="LiOther.html">Li</a>
+              <a class="dropdown-item" href="NaOther.html">Na</a>
+              <a class="dropdown-item" href="KOther.html">K</a>
+              <a class="dropdown-item" href="RbOther.html">Rb</a>
+              <a class="dropdown-item" href="CsOther.html">Cs</a>
+              <a class="dropdown-item" href="FrOther.html">Fr</a>
+              <a class="dropdown-item" href="BeIIOther.html">Be+</a>
+              <a class="dropdown-item" href="MgIIOther.html">Mg+</a>
+              <a class="dropdown-item" href="CaIIOther.html">Ca+</a>
+              <a class="dropdown-item" href="SrIIOther.html">Sr+</a>
+              <a class="dropdown-item" href="BaIIOther.html">Ba+</a>
+              <a class="dropdown-item" href="RaIIOther.html">Ra+</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " style='color: white' href="team.html">Our team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " style='color: white' href="about.html">About the project</a>
+          </li>
+      </ul>
+      <a type = "button" class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px;" href="#PgInfo" rel="jqmodal:open">Help</a>
+      <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'citation.html';">Citation info</button>
+      <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'feedback.html';">Feedback</button>
+    </div>
+  </nav>
+
+
+
+
+  <div style="text-align:center;">
+<iframe width="1000" height="600" src="https://www.youtube.com/embed/T-EimyXFi6A?autoplay=1" title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

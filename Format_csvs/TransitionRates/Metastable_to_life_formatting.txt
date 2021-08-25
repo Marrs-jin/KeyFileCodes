@@ -1,0 +1,25 @@
+<div align = center>
+<table class="table center" id="htmltable2"  data-name="listtable" cellpadding=0 cellspacing=0 width=214 style=' border: .5pt solid #4472C4; border-collapse:
+collapse;table-layout:fixed; display: none; width:200pt'>
+
+<thead>
+<tr style="text-align: center;">
+  <th class=xl6320382 width=200  style='height:14.75pt;width:70pt;
+  font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+  border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+  background:#4472C4;mso-pattern:#4472C4 none; text-align: center; padding-left: 0pt'>&nbsp;&nbsp;State<br>&nbsp;</th>
+
+
+  <th class=xl6320382 width=200  style='height:14.75pt;width:130pt;
+  font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+  border-right:.5pt solid #4472C4;border-bottom:.5pt solid #4472C4;border-left:.5pt solid #2F75B5;
+  background:#4472C4;mso-pattern:#4472C4 none; text-align: center'>Radiative lifetime <br> (ns) <a type="button" href="#LftInfo" rel="jqmodal:open" class="btn1 btn-warning noprint" data-container="body"
+  data-toggle="tooltip" title="See 'About the project: Transition rate page info' for an explanation how these values were calculated unless a reference is given."
+   data-placement="right">info </a></th>
+
+</thead>
+
+<!-- duplicating transactions and only checking the first column -->
+<tbody id="cs_table2">

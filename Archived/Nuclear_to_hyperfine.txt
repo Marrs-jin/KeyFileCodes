@@ -1,0 +1,96 @@
+</tbody>
+</table>
+</div>
+
+<div class="container center">
+<table class="table center" id="table2"  data-name="listtable" cellpadding=0 cellspacing=0 width=500 style=' border: .5pt solid #4472C4; border-collapse:
+collapse;table-layout:fixed; width:280pt;'>
+  <thead>
+      <tr style="text-align: center;">
+
+
+        <th class=xl159427  align=center style='height:14.75pt;width:45pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left: .5pt;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center; padding-left: 0pt;'> Isotope </th>
+
+        <th class=xl159427  align=center style='height:14.75pt;width:40pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left: .5pt;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'> State </th>
+
+        <th class=xl159427  align=center style='height:14.75pt;width:120pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left: .5pt;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>&nbsp;&nbsp; Theory </th>
+
+      <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+      background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Key1 <a type="button" href="#MatInfo" rel="jqmodal:open" class="btn1 btn-warning" data-container="body" data-toggle="tooltip" title="Absolute values of reduced electric-dipole matrix elements are listed in atomic units. Uncertainties are listed in parentheses." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+        info
+      </button></th>
+
+
+      <th class=xl159427  align=center style='height:14.75pt;width:145pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left: .5pt;
+      background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>&nbsp;&nbsp;  Experiment </th>
+
+      <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+      background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Key2 <a type="button" href="#MatInfo" rel="jqmodal:open" class="btn1 btn-warning" data-container="body" data-toggle="tooltip" title="Absolute values of reduced electric-dipole matrix elements are listed in atomic units. Uncertainties are listed in parentheses." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+        info
+      </button></th>
+
+<!--
+      <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+      background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>Half-life <a type="button" href="#hlflifeInfo" rel="jqmodal:open" class="btn1 btn-warning"
+      data-container="body" data-toggle="tooltip" title="N.J. Stone, Table of recommended nuclear magnetic dipole moments: Part I, long-lived states, INDC(NDS)-079"
+      data-placement="right" >info </a><br><br></th>
+    -->
+
+      <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+      background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Reference1 <a type="button" href="#MatInfo" rel="jqmodal:open" class="btn1 btn-warning" data-container="body" data-toggle="tooltip" title="Absolute values of reduced electric-dipole matrix elements are listed in atomic units. Uncertainties are listed in parentheses." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+        info
+      </button></th>
+
+      <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+      background:#4472C4;mso-pattern:#4472C4 none; display: none;'>DOI1 <a type="button" href="#MatInfo" rel="jqmodal:open" class="btn1 btn-warning" data-container="body" data-toggle="tooltip" title="Absolute values of reduced electric-dipole matrix elements are listed in atomic units. Uncertainties are listed in parentheses." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+        info
+      </button></th>
+
+      <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+      background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Reference2 <a type="button" href="#MatInfo" rel="jqmodal:open" class="btn1 btn-warning" data-container="body" data-toggle="tooltip" title="Absolute values of reduced electric-dipole matrix elements are listed in atomic units. Uncertainties are listed in parentheses." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+        info
+      </button></th>
+
+      <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+      font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+      none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+      border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+      background:#4472C4;mso-pattern:#4472C4 none; display: none;'>DOI2 <a type="button" href="#MatInfo" rel="jqmodal:open" class="btn1 btn-warning" data-container="body" data-toggle="tooltip" title="Absolute values of reduced electric-dipole matrix elements are listed in atomic units. Uncertainties are listed in parentheses." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+        info
+      </button></th>
+
+  </thead>
+  <tbody id="table_hyp">

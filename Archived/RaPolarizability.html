@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174267174-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-174267174-1');
+    </script>
+
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WPM5389');</script>
+      <!-- End Google Tag Manager -->
+
+<title>Polarizability</title>
+<meta charset="utf-8">
+    <!-- responsive webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="pol/Ra/Ra7s.html" as="document">
+    <link rel="preload" href="pol/Ra/Ra7s7p3.html" as="document">
+    <link rel="preload" href="pol/Ra/Ra7s7p1.html" as="document">
+    <link rel="preload" href="pol/Ra/Ra7p1.html" as="document">
+    <link rel="preload" href="pol/Ra/Ra7p3.html" as="document">
+ 
+
+
+
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--bootstap-->
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- loader -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+navpol {
+  float: left;
+  text-align: center;
+  width: 20%;
+  /* height: 800px; only for demonstration, should be removed */
+  background:  rgb(255, 255, 255);
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+navpol ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+article {
+  float: left;
+  text-align: center;
+  padding: 20px;
+  width: 60%;
+  background-color: #f1f1f1;
+  /* height: 800px; only for demonstration, should be removed */
+}
+
+aside {
+  float: left;
+  width: 20%;
+  /* height: 800px; only for demonstration, should be removed */
+  background: rgb(255, 255, 255);
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 1250px) {
+  navpol  {
+    width: 30%;
+    height: auto;
+    float:left;
+  }
+  header  {
+    width: 100%;
+    padding:0px;
+    }
+  article{
+    width: 70%;
+    padding:0px;
+
+  }
+  aside{
+    width: 30%;
+    padding:20px;
+    float:left;
+  }
+  /* iframe{
+    width:100%;
+    padding: 0px;
+  } */
+  container {
+    width:100%;
+    padding: 0px;
+  }
+}
+@media (max-width: 800px) {
+  navpol  {
+    width: 100%;
+    height: auto;
+    float:left;
+
+  }
+  header  {
+    width: 100%;
+    padding:0px;
+    }
+  article{
+    width: 100%;
+    padding:10px;
+
+  }
+  aside{
+    width: 100%;
+    padding:20px;
+    float:left;
+  }
+  iframe{
+    width:100%;
+    padding: 0px;
+  }
+  container {
+    width:100%;
+    padding: 0px;
+  }
+}
+</style>
+<style id="Cs_10895_Styles">
+    <!--table
+        {mso-displayed-decimal-separator:"\.";
+        mso-displayed-thousand-separator:"\,";}
+    .font510895
+        {color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;}
+    .xl1510895
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:11.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:general;
+        vertical-align:bottom;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl1529633 /* styling result data in the center of each cloumn*/
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        text-align:center;
+        vertical-align:center;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl6310895
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:700;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:center;
+        vertical-align:center;
+        border:0pt solid windowtext;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl6410895
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:16.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:center;
+        vertical-align:center;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    -->
+    </style>
+    <style>
+    .button {
+      background-color:  rgba(0, 200, 255, 1);
+      border: none;
+      color: black;
+      padding: 5px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight:700;
+      font-style:normal;
+      text-decoration:none;
+      font-family:Calibri, sans-serif;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:150;
+      height: 45px;
+      border-radius: 5px;
+      box-shadow: 0 2px #999;
+    }
+    .button:hover {background-color:  rgba(30, 144, 255, 1); }
+    .button:active {
+    background-color: #355a3627;
+    box-shadow: 0 5px rgba(27, 27, 27, 0.80);
+    transform: translateY(3px);
+    }
+    .button:focus {
+    background-color:  rgba(30, 144, 255, 1);
+    box-shadow: 5px 5px rgba(27, 27, 27, 0.80);
+    transform: translateY(0px);
+    color: white;
+    }
+    /* to center the website- will center the website on screens that are wider than 500px. On screens that are less than 500px wide, it will span the whole of the page*/
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+    .btn1 {
+  background-color: rgba(0, 191, 255, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+
+}
+
+/* Darker background on mouse-over */
+.btn1:hover {
+  background-color: DodgerBlue;
+}
+/* .btn2 {
+      background-color: rgba(0, 191, 255, 1);
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 5px;
+
+    }
+    .btn2:hover {
+      background-color: DodgerBlue;
+    } */
+
+    .btn2 {
+  background-color: rgba(0, 191, 255, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+
+}
+  .btn2:hover {
+    background-color: DodgerBlue;
+    text-decoration: none;
+  }
+
+  a.btn2{
+    background: #19e004;
+  }
+  a.btn2:hover{
+    background-color: #2a893e;
+    text-decoration: none;
+  }
+    .modal{
+  width:800px;
+  /* max-width: 100% ; */
+  height:800px;
+  /* max-height: 100%; */
+ position:absolute;
+  top:15%;
+  left:50%;
+  padding: 20px 20px 20px 20px;
+  /* overflow: auto; */
+
+}
+
+/* This only works with JavaScript, if it's not present, don't show loader */
+/* .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 800px;
+	height: 700px;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+} */
+
+/* #loadImg{position:absolute;z-index:999;display:block;width:1100px;height:700px;background:#fff;text-align:center;vertical-align:middle; } */
+/* #loadImg div{display:table-cell;width:1100px;height:700px;background:#fff;text-align:center;vertical-align:middle;} */
+/* .iframe_container {
+    background-image: url('https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.iframe_container iframe {
+    background: transparent;
+} */
+/* responsive iframe */
+/* .iframe-container {
+  overflow: hidden; */
+  /* // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  /* padding-top: 60%;
+  padding-right: 60%;
+  position: relative;
+  float:center;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   width:100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+
+} */
+
+    </style>
+
+    <script>
+        function readfile() {
+          alert(document.getElementById('iframe').contentDocument.body.firstChild.innerHTML);
+        }
+        function load() {
+          element.innerHTML = "7s<sub>1/2</sub>";
+          document.getElementById("iframe").src = "pol/Ra/Ra7s.html";
+          document.getElementById("default").focus();
+          document.getElementById('loadImg').style.display='block';
+        }
+    </script>
+    <script>
+         function draw_graph(id) {
+      // to show the selected Element name on top of the page
+      var element = document.querySelector("#element");
+      element.innerHTML = id.innerHTML;
+      // document.getElementById("iframe").src = "Li.txt"
+      switch (id.value) {
+        case "7s1/2":
+        document.getElementById('loadImg').style.display='block';
+          document.getElementById("iframe").src = "pol/Ra/Ra7s.html"
+          break;
+        case "7p1/2":
+        document.getElementById('loadImg').style.display='block';
+          document.getElementById("iframe").src = "pol/Ra/Ra7p1.html"
+          break;
+        case "7p3/2":
+          document.getElementById('loadImg').style.display='block';
+          document.getElementById("iframe").src = "pol/Ra/Ra7p3.html"
+          break;
+        // case "7p1/2":
+        //   document.getElementById("iframe").src = "pol/cs/7p1.html"
+        //   break;
+        // case "7p3/2":
+        //   document.getElementById("iframe").src = "pol/cs/7p3.html"
+        //   break;
+        case "7s7p1/2":
+          document.getElementById('loadImg').style.display='block';
+          document.getElementById("iframe").src = "pol/Ra/Ra7s7p1.html"
+          break;
+        case "7s7p3/2":
+          document.getElementById('loadImg').style.display='block';
+          document.getElementById("iframe").src = "pol/Ra/Ra7s7p3.html"
+          break;
+        // case "6s7p1/2":
+        //   document.getElementById("iframe").src = "Cs7p1.html"
+        //   break;
+        // case "6s7p3/2":
+        //   document.getElementById("iframe").src = "Cs7p3.html"
+        //   break;
+        }
+    }
+    </script>
+
+    <script type="text/javascript">
+    //  iframe.document.addEventListener('click', function(event) {clic(this.id);}, false);
+    //  function clic(id) {
+    //    alert(id);
+    //   }
+     function getFocus() {
+      // if (document.activeElement.className =="div.bk" || document.activeElement.id =="iframe"){
+      //   console.log("bokeh");
+      // }
+        // if (document.activeElement) {
+        // console.log(document.activeElement.className);
+        // console.log(document.activeElement.tagName);
+        // console.log(document.activeElement.id);
+        // console.log(window.getSelection());
+        var state = document.querySelector("#element").innerHTML;
+        console.log(state);
+         // output.innerHTML = document.activeElement.tagName;
+        switch (state) {
+        case "7s<sub>1/2</sub>":
+          document.getElementById("default").focus();
+          break;
+        case "7p<sub>1/2</sub>":
+          document.getElementById("7p1/2").focus();
+          break;
+        case "7p<sub>3/2</sub>":
+          document.getElementById("7p3/2").focus();
+          break;
+        // case "7p<sub>1/2</sub>":
+        //   document.getElementById("7p1/2").focus();
+        //   break;
+        // case "7p<sub>3/2</sub>":
+        //   document.getElementById("7p3/2").focus();
+        //   break;
+        case "7s<sub>1/2</sub> &amp; 7p<sub>1/2</sub>":
+          document.getElementById("7s7p1/2").focus();
+          break;
+        case "7s<sub>1/2</sub> &amp; 7p<sub>3/2</sub>":
+          document.getElementById("7s7p3/2").focus();
+          break;
+        // case "6s<sub>1/2</sub> &amp; 7p<sub>1/2</sub>":
+        //   document.getElementById("6s7p1/2").focus();
+        //   break;
+        // case "6s<sub>1/2</sub> &amp; 7p<sub>3/2</sub>":
+        //   document.getElementById("6s7p3/2").focus();
+        //   break;
+        }
+        // }
+
+        var listener = window.addEventListener('blur', function() {
+        if (document.activeElement === document.getElementById('iframe')) {
+        // clicked
+         console.log("clicked");
+         getFocus();
+        }
+        window.removeEventListener('blur', listener);
+        });
+
+        }
+   </script>
+   <!-- //detecting clicks on iframe -->
+<!-- <script>
+  $(document).ready(function(){
+      $("iframe").load(function(){
+          $(this).contents().on("mousedown, mouseup,  click", function(){
+              alert("Click detected inside iframe.");
+              getFocus();
+              $(".se-pre-con").fadeOut("slow");;
+          });
+      });
+  });
+  </script> -->
+ <!-- Wait for window load -->
+
+<!-- <script>
+  $("#iframe").on("load", function () {
+    document.getElementById('loadImg').style.display= 'none';
+})
+</script> -->
+<script>
+    $("#iframe").on("load", function () {
+      document.getElementById('loadImg').style.display= 'none';
+  })
+  </script>
+</head>
+<body onload="load()" onclick="getFocus();">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPM5389"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link  active" href="index.html" style="font-weight: bold">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style = 'color: white'>Matrix Elements</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Li.html">Li</a>
+            <a class="dropdown-item" href="Na.html" >Na</a>
+            <a class="dropdown-item" href="K.html" >K</a>
+            <a class="dropdown-item" href="Rb.html" >Rb</a>
+            <a class="dropdown-item" href="Cs.html" >Cs</a>
+            <a class="dropdown-item" href="Fr.html" >Fr</a>
+            <a class="dropdown-item" href="BeII.html" >Be+</a>
+            <a class="dropdown-item" href="MgII.html" >Mg+</a>
+            <a class="dropdown-item" href="CaII.html" >Ca+</a>
+            <a class="dropdown-item" href="SrII.html" >Sr+</a>
+            <a class="dropdown-item" href="BaII.html" >Ba+</a>
+            <a class="dropdown-item" href="RaII.html" >Ra+</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style = "color: white; ">Transition Rates</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="LiTranAuto.html">Li</a>
+            <a class="dropdown-item" href="NaTranAuto.html" >Na</a>
+            <a class="dropdown-item" href="KTranAuto.html" >K</a>
+            <a class="dropdown-item" href="RbTranAuto.html" >Rb</a>
+            <a class="dropdown-item" href="CsTranAuto.html" >Cs</a>
+            <a class="dropdown-item" href="FrTranAuto.html" >Fr</a>
+            <a class="dropdown-item" href="BeIITranAuto.html" >Be+</a>
+            <a class="dropdown-item" href="MgIITranAuto.html" >Mg+</a>
+            <a class="dropdown-item" href="CaIITranAuto.html" >Ca+</a>
+            <a class="dropdown-item" href="SrIITranAuto.html" >Sr+</a>
+            <a class="dropdown-item" href="BaIITranAuto.html" >Ba+</a>
+            <a class="dropdown-item" href="RaIITranAuto.html" >Ra+</a>
+          </div>
+        </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style = 'color: white; font-weight: bold;'>Polarizabilities</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="LiPolarizability.html">Li</a>
+          <a class="dropdown-item" href="NaPolarizability.html">Na</a>
+          <a class="dropdown-item" href="KPolarizability.html">K</a>
+          <a class="dropdown-item " href="RbPolarizability.html">Rb</a>
+          <a class="dropdown-item " href="Polarizability.html">Cs</a>
+          <a class="dropdown-item" href="FrPolarizability.html">Fr</a>
+          <a class="dropdown-item" href="BePolarizability.html">Be+</a>
+          <a class="dropdown-item " href="MgPolarizability.html">Mg+</a>
+          <a class="dropdown-item " href="CaPolarizability.html">Ca+</a>
+          <a class="dropdown-item " href="SrPolarizability.html">Sr+</a>
+          <a class="dropdown-item" href="BaPolarizability.html">Ba+</a>
+          <a class="dropdown-item active" href="RaPolarizability.html">Ra+</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style = 'color: white'>Other Data</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="LiOther.html">Li</a>
+          <a class="dropdown-item" href="NaOther.html">Na</a>
+          <a class="dropdown-item" href="KOther.html" >K</a>
+          <a class="dropdown-item" href="RbOther.html" >Rb</a>
+          <a class="dropdown-item" href="CsOther.html">Cs</a>
+          <a class="dropdown-item" href="FrOther.html">Fr</a>
+          <a class="dropdown-item" href="BeIIOther.html" >Be+</a>
+          <a class="dropdown-item" href="MgIIOther.html" >Mg+</a>
+          <a class="dropdown-item" href="CaIIOther.html">Ca+</a>
+          <a class="dropdown-item" href="SrIIOther.html">Sr+</a>
+          <a class="dropdown-item" href="BaIIOther.html" >Ba+</a>
+          <a class="dropdown-item" href="RaIIOther.html" >Ra+</a>
+        </div>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link "  style = 'color: white' href="team.html">Our team</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link "  style = 'color: white' href="about.html">About the project</a>
+      </li>
+      </ul>
+      <button type="button" class="btn2 btn-outline-success my-2 my-sm-0" style="margin:5px 5px 5px 5px; background: #4CAF50;" data-toggle="modal" data-target="#myModal">Help</button>
+      <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align:left">Help</h4>
+        </div> -->
+        <div class="modal-body">
+          <p  align=”justify”>All polarizabilities are in given atomic units; the wavelengths are in nm. <br>
+            <ul> 
+              <li>Click on "Static polarizability" to see a table of static polarizabilities. Click on the "Back" button to return to the main polarizability page. </li>
+              <li>Click on a state button (for example, 3s) to see a dynamic polarizability plot for this state. </li>
+              <li>Click on a button with two states (for example, 3s & 3p) to see dynamic polarizability plots for these states.</li>
+              <li>Use either polarizability and wavelength sliders or plot tool 'box_zoom' to rescale the graph. Click on the "reset" button to go back to the initial graph.</li>
+              <li>Use tool 'save' to save the graph in png format.</li>
+              <li>Click on "Download data" to download the data file used to plot the graph. </li>
+            </ul>
+           
+            <!-- <P>       
+            A polarizability curve can be shown/hidden for a state by clicking on the corresponding legend.
+          </P> -->
+            <p>
+            
+            Click <a href="https://www1.udel.edu/atom/about.html" target=_blank>here</a> to learn more about the data and polarizability atomic unit conversion. 
+          </p>
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+      <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'citation.html';">Citation Info</button>
+      <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'feedback.html';">Feedback</button>
+      </div>
+      </nav>
+<header>
+    <h1 style="color:white; font-size: 27px; align:center"> Polarizabilities for Ra<sup>+</sup></h1>
+</header>
+  <navpol>
+    <ul><li><button class="button btn" style="font-size: 18px;" onclick="location.href='RaScalarPol.html'" value="Click here to visit Ra+ Scalar Polarizability. "  >Static polarizabilities</button></li></ul>
+    <h5> <b> Click on a state to see the graph</b></h5>
+    <ul>
+      <li><button class="button btn" id="default" onclick="draw_graph(this)" value="7s1/2" onmouseout="this.innerHTML='7s<sub>1/2</sub>'" style='width:46pt'>7s<sub>1/2</sub></button></li>
+      <li><button class="button btn" id="7p1/2" onclick="draw_graph(this)" value="7p1/2" onmouseout="this.innerHTML='7p<sub>1/2</sub>'" style='width:46pt'>7p<sub>1/2</sub></button></li>
+      <li><button class="button btn " id="7p3/2" onclick="draw_graph(this)" value="7p3/2" onmouseout="this.innerHTML='7p<sub>3/2</sub>'" style='width:46pt'>7p<sub>3/2</sub></button></li>
+      <!-- <li><button class="button btn " id="7p1/2" onclick="draw_graph(this)" value="7p1/2" onmouseout="this.innerHTML='7p<sub>1/2</sub>'" style='width:46pt'>7p<sub>1/2</sub></button></li>
+      <li><button class="button btn " id="7p3/2" onclick="draw_graph(this)" value="7p3/2" onmouseout="this.innerHTML='7p<sub>3/2</sub>'" style='width:46pt'>7p<sub>3/2</sub></button></li> -->
+    </ul>
+    <br>
+    <br>
+    <h5><b>Combined graphs</b></h5> 
+    <ul>
+      <li><button class="button btn" id="7s7p1/2" onclick="draw_graph(this)" value="7s7p1/2" onmouseout="this.innerHTML='7s<sub>1/2</sub> & 7p<sub>1/2</sub>'">7s<sub>1/2</sub> & 7p<sub>1/2</sub></button></li> 
+      <li><button class="button btn " id="7s7p3/2" onclick="draw_graph(this)" value="7s7p3/2" onmouseout="this.innerHTML='7s<sub>1/2</sub> & 7p<sub>3/2</sub>'">7s<sub>1/2</sub> & 7p<sub>3/2</sub></button></li> 
+      <!-- <li><button class="button btn " id="6s7p1/2" onclick="draw_graph(this)" value="6s7p1/2" onmouseout="this.innerHTML='6s<sub>1/2</sub> & 7p<sub>1/2</sub>'">6s<sub>1/2</sub> & 7p<sub>1/2</sub></button></li>
+      <li><button class="button btn " id="6s7p3/2" onclick="draw_graph(this)" value="6s7p3/2" onmouseout="this.innerHTML='6s<sub>1/2</sub> & 7p<sub>3/2</sub>'">6s<sub>1/2</sub> & 7p<sub>3/2</sub></button></li> -->
+    </ul> 
+</navpol>
+
+  <article>
+    <div calss= "container" align=center style="overflow-x:auto;">
+    <h6 id="element" style="text-align: Center;margin: 20px;font-weight: bold;"> <I> </I></h6>
+    <!-- <div class="se-pre-con"> -->
+    <!-- Responsive iframe -->
+    <!-- <div id="loadImg"> <div>
+      <img src="https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif"   />
+    </div></div> -->
+    <!-- <div class="se-pre-con"></div> -->
+    <div class="iframe_container">
+        <div id="loadImg"><img src="photos/FALLING-LOADER-unscreen.gif" style="vertical-align: middle;top: 700px;" /></div>
+        <!-- <a href="https://icon-library.net/icon/loading-icon-transparent-background-4.html" title="Loading Icon Transparent Background #49962"><img src="https://icon-library.net//images/loading-icon-transparent-background/loading-icon-transparent-background-4.jpg" width="350" /></a> -->
+      <iframe   align=center id='iframe' height="800" width="700" src='' onload="document.getElementById('loadImg').style.display='none';" scrolling="yes" style="border:none;" onclick="getFocus();"> </iframe>
+      <!-- </div> -->
+  </div>
+    </div>
+  </article>
+
+  <aside>
+    <div align=left style="overflow-x:auto;text-align: justify;font-size: 15px;">
+      <br>
+      <br>
+    <h5><b> Plot Tools</b></h5>
+    <br>
+    <!-- <div class="section" id="pantool">
+        <a class="reference internal" href="images/Pan.png"><img alt="pan_icon" src="images/Pan.png" style="height: 14pt;"></a>
+        Tool name:<code class="docutils literal"><span class="pre">'pan' </span></code>
+        <p>The pan tool allows the user to pan the plot by left-dragging a mouse or dragging a
+        finger across the plot region.</p>
+    </div> -->
+    <!-- <hr> -->
+    <div class="section" id="boxzoomtool">
+        <a class="reference internal" href="images/BoxZoom.png"><img alt="box_zoom_icon" src="images/BoxZoom.png" style="height: 14pt;"></a>
+        Tool name: <code class="docutils literal"><span class="pre">'box_zoom'</span></code>
+        <p>The box zoom tool allows the user to define a rectangular region to zoom the
+        plot bounds to, by left-dragging a mouse or dragging a finger across the
+        plot area.</p>
+    </div>
+    <hr>
+    <!-- <div class="section" id="wheelzoomtool">
+        <a class="reference internal" href="images/WheelZoom.png"><img alt="wheel_zoom_icon" src="images/WheelZoom.png" style="height: 14pt;"></a>
+        Tool name: <code class="docutils literal"><span class="pre">'wheel_zoom'</span></code>
+        <p>The wheel zoom tool will zoom the plot in and out, centered on the current
+        mouse location. </p>
+    </div>
+    <hr> -->
+    <div class="section" id="hovertool">
+                <a class="reference internal" href="images/hover.png"><img alt="save_icon" src="images/hover.png" style="height: 14pt;"></a>
+                Tool name: <code class="docutils literal"><span class="pre">'hover'</span></code>
+                <p>The hover tool pops up a tooltip whenever the cursor is over a curve.
+                </p>
+    </div>
+    <hr>
+    <div class="section" id="crosshairtool">
+                    <a class="reference internal" href="images/crosshair.png"><img alt="save_icon" src="images/crosshair.png" style="height: 14pt;"></a>
+                    Tool name: <code class="docutils literal"><span class="pre">'crosshair'</span></code>
+                    <p>The crosshair tool draws a crosshair annotation over the plot, centered on
+                    the current mouse position. </p>
+    </div>
+    <hr>
+    <div class="section" id="previewsavetool">
+                        <a class="reference internal" href="images/Save.png"><img alt="save_icon" src="images/Save.png" style="height: 14pt;"></a>
+                        Tool name: <code class="docutils literal"><span class="pre">'save'</span></code>
+                        <p>The save tool allows the user to save a PNG image of the plot.</p>
+    </div>
+
+    <hr>
+Tools with a blue line beside them are active. By clicking on a tool you can make it active or inactive.<br>
+<p> A polarizability curve can be shown/hidden for a state by clicking on the corresponding legend.</p>
+
+
+    <br>
+
+  </aside>
+
+
+</body>
+</html>

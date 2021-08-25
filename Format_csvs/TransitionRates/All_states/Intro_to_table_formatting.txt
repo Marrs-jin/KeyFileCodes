@@ -1,0 +1,714 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174267174-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-174267174-1');
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+          }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WPM5389');</script>
+      <!-- End Google Tag Manager -->
+<!-- responsive webpage -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+
+<!--Export Data-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569818907/jquery.table2excel.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--Export Data-->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.production.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
+<!--bootstap-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="MDB\js\popper.min.js"></script>
+<!-- datatables -->
+<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<!-- Toggle Button -->
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<head>
+
+<!-- part that works for excel -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css"/>
+
+<script src = "https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src = "https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+<!-- functionality of Toggle button -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+<!-- jqeury modal -->
+<!-- <script src="https://cdn.statically.io/gh/Marrs-jin/WebDesign/main/modal_func.js"></script> -->
+<!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/Marrs-jin/WebDesign/main/modal_style.css"> -->
+<script src="modal_func.js"></script>
+<link rel="stylesheet" href="modal_style.css">
+
+<script type="text/javascript" class="init">
+/* Custom filtering function which will search data in column four between two values */
+$.fn.dataTable.ext.search.push(
+    function( settings, data, dataIndex ) {
+        var min = parseInt( $('#min').val(), 10 );
+        var max = parseInt( $('#max').val(), 10 );
+        var wavelength = parseFloat( data[5] ) || 0; // use data for the Wavelength column
+
+        if ( ( isNaN( min ) && isNaN( max ) ) ||
+             ( isNaN( min ) && wavelength <= max ) ||
+             ( min <= wavelength   && isNaN( max ) ) ||
+             ( min <= wavelength   && wavelength <= max ) )
+        {
+            return true;
+        }
+        return false;
+    }
+);
+
+$(document).ready(function() {
+  var table = $('#htmltable').DataTable({
+    "paging":false,
+    "aaSorting": [],
+    columnDefs: [
+      {
+        orderable: false,
+        targets: 0
+      },
+      {
+        orderable: false,
+        targets: 1
+      }
+                ],
+    "bInfo": false, // hide showing entries
+    buttons: [
+        {
+            extend: 'excelHtml5',
+            messageTop: 'Wavelengths are calculated using the NIST ASD database energies , unless marked with *',
+            filename: 'Cs1TransitionRates',
+            customizeData: function(data) {
+              for(var i = 0; i < data.body.length; i++) {
+                // j goes through columns. skip first 2 (initial, final)
+                for(var j = 0; j < data.body[i].length; j++) {
+                  if (j != 0 && j != 1 && j != 7 && j != 14 && j != 15 && j != 16 && j != 17)  {
+                    data.body[i][j] = Number(data.body[i][j]);
+                                          }
+                  else {
+                    data.body[i][j] = data.body[i][j];
+                        }
+        }
+      }
+    }
+
+        },
+        {
+          extend: 'csv',
+          filename: 'Cs1TransitionRates',
+        },
+        {
+          extend: 'print'
+        }
+    ]
+
+  });
+$('.button_export_excel').click(() => {
+  $('#htmltable').DataTable().buttons(0,0).trigger()
+});
+
+$('.button_export_csv').click(() => {
+    $('#htmltable').DataTable().buttons(0,1).trigger()
+});
+
+// Event listener to the two range filtering inputs to redraw on input
+$('#min, #max').keyup( function() {
+    table.draw();
+} );
+
+} );
+</script>
+
+
+<style type="text/css">
+
+    @media print
+    {
+    .noprint {display:none;}
+    .dataTables_filter {display: none;}
+    }
+    @media screen
+    {
+    /* ... */
+    }
+</style>
+
+<style>
+.button {
+  background-color: rgba(0, 200, 255, 1);
+  border: none;
+  color: black;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:700;
+  font-style:normal;
+  text-decoration:none;
+  font-family:Calibri, sans-serif;
+  margin: 1px 1px;
+  cursor: pointer;
+  width:65;
+  height:25px;
+  border-radius: 10px;
+  box-shadow: 0 2px #999;
+}
+.button:hover {
+  background-color:rgba(30, 144, 255, 1);
+  display: block; }
+.button:active {
+background-color: rgba(16, 78, 139, 1);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+.button-clicked {
+background-color: rgb(50, 92, 79);
+}
+.button:focus {
+background-color:  rgba(30, 144, 255, 1);
+/* color: whitesmoke; */
+text-shadow: whitesmoke;
+/* border-style: double; */
+box-shadow: 0 3px #666;
+transform: translateY(2px);
+color: black;
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Create two columns/boxes that floats next to each other */
+navpol {
+  float: left;
+  text-align: center;
+  width: 30%;
+  background:  rgb(255, 255, 255);
+  padding: 5px;
+  height: 800px;
+
+}
+
+article {
+  float: left;
+  text-align: center;
+  padding: 0 20px;
+  width: 40%;
+  background-color: #ffffff;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media  (max-width:1024px) {
+  /* For laptops phones: */
+  navpol {
+    width:100%;
+    padding: 0px;
+  }
+  article{
+    width:100%;
+    padding: 0px;
+  }
+
+  xl6322755{
+    width:100%;
+    padding: 0px;
+  }
+  xl6620382{
+    width:100%;
+    padding: 0px;
+  }
+  container{
+    width:100%;
+    padding: 0px;
+    }
+    .btn2 {
+      width: auto;
+      height: auto;
+    }
+
+}
+</style>
+
+
+<style>
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 0px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    /* width:40%; */
+
+  }
+.btn2 {
+  background-color: rgba(0, 191, 255, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+.btn2:hover {
+  background-color: DodgerBlue;
+  text-decoration: none;
+}
+
+a.btn2{
+  background: #4CAF50;
+  -webkit-appearance: none;
+}
+a.btn2:hover{
+  background-color: #2a893e;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+  /* back button styling */
+a.back{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+a.back:hover{
+  background-color: #2a893e;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+.button_export_excel, .button_export_csv {
+  background-color: rgba(0, 191, 255, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.button_export_excel:hover, .button_export_csv:hover {
+  background-color: DodgerBlue;
+}
+
+.disabled {
+  opacity: 1.0;
+  border: 3.5px solid black;
+  background-color: #c18c1a;
+}
+.disabled:hover {
+  background-color: #825f12;
+}
+
+/* Darker background on mouse-over */
+
+td{
+    text-align: center;
+}
+</style>
+
+<style>
+    .btn-primary{
+        height:20px;
+        font-size: 10px;
+        margin-top: 2px;
+        padding-top: 2px;
+    }
+	.container{
+    	margin: 20px;
+    }
+</style>
+<style>
+.label {
+   text-align: center;
+}
+</style>
+
+<style>
+/* sets the color of the background of the popup */
+.blocker{
+  background-color:rgba(0,0,0,0.5);
+}
+
+.jqmodal{
+  display:none;
+  vertical-align:middle;
+  position:relative;
+  z-index:2;
+
+  /* determines posiition of modal pop up */
+
+  left: 25% !important;
+  bottom: 20% !important;
+
+
+}
+@media screen and (max-width: 600px) {
+  .jqmodal {
+    left: 0% !important;
+    bottom: 0% !important;
+  }
+}
+</style>
+
+<style>
+.navbar2 {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: auto;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 8%;
+  min-height: 8%;
+  max-height: 10%;
+}
+
+.main-logo {
+  flex: 1 0 0;
+  text-align: left;
+  padding-left: 1%;
+}
+  #logo {
+
+    width: 100%;
+    height: auto;
+  }
+  .sidebar-collapse,
+  .small-logo {
+    width: 100px;
+    height: auto;
+
+  }
+  @media screen and (max-width: 600px) {
+
+    .sidebar-collapse,
+    .navbar2,
+     {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .btn2 {
+      height: auto;
+      max-height: 100%;
+      min-height: auto;
+    }
+    .small-logo{
+      height: auto;
+      max-height: 100%;
+      min-height: auto;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .btn2 {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: 100%;
+      max-height: 100%;
+      min-height: auto;
+    }
+    .small-logo{
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: 100%;
+      max-height: 100%;
+      min-height: auto;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .sidebar-collapse,
+    .navbar2,
+     {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  </style>
+
+
+</head>
+
+<script>
+function printPage() {
+
+window.print();
+
+}
+</script>
+
+<script>
+function load() {
+document. getElementById("htmltable").style.display="";
+
+}
+</script>
+
+<title>Cs</title>
+
+<script type="text/javascript">
+function getFocus() {
+  var state = document.querySelector("#demo").innerHTML;
+  console.log(state);
+  document.getElementById(state).focus();
+
+  var listener = window.addEventListener('blur', function() {
+    if (document.activeElement === document.getElementById('iframe')) {
+    // clicked
+      console.log("clicked");
+      getFocus();
+    }
+    window.removeEventListener('blur', listener);
+    });
+}
+</script>
+
+
+
+
+
+   <body onload="load()" onclick="getFocus();">
+     <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+       <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item dropdown ">
+       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false" style='color: white'>Elements</a>
+     	<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+      		<a class="dropdown-item" href="Li1TranAuto.html">Li</a>
+      		<a class="dropdown-item" href="Na1TranAuto.html">Na</a>
+      		<a class="dropdown-item" href="K1TranAuto.html">K</a>
+      		<a class="dropdown-item" href="Rb1TranAuto.html">Rb</a>
+      		<a class="dropdown-item active" href="Cs1TranAuto.html">Cs</a>
+      		<a class="dropdown-item" href="Fr1TranAuto.html">Fr</a>
+      		<a class="dropdown-item" href="Be2TranAuto.html">Be<sup>+</sup></a>
+      		<a class="dropdown-item" href="Mg2TranAuto.html">Mg<sup>+</sup></a>
+      		<a class="dropdown-item" href="Ca2TranAuto.html">Ca<sup>+</sup></a>
+      		<a class="dropdown-item" href="Sr2TranAuto.html">Sr<sup>+</sup></a>
+      		<a class="dropdown-item" href="Ba2TranAuto.html">Ba<sup>+</sup></a>
+      		<a class="dropdown-item" href="Ra2TranAuto.html">Ra<sup>+</sup></a>
+    	</div>
+     </li>
+   <li class="nav-item" >
+     <a class="nav-link "  style = 'color: white' href="team.html"> Our team</a>
+   </li>
+   <li class="nav-item" >
+     <a class="nav-link "  style = 'color: white' href="about.html">About the project</a>
+   </li>
+   </ul>
+   <a type = "button" class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px;" href="#PgInfo" rel="jqmodal:open">Help</a>
+   <a type = "button" class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px;" href="#UnitInfo" rel="jqmodal:open">Units</a>
+   <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'citation.html';">Citation info</button>
+   <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'feedback.html';">Feedback</button>
+   </div>
+   </nav>
+
+
+  <div id="UnitInfo" class="jqmodal" style = " bottom: 10% !important;">
+    <ul>
+    <p><li>Click on the button for the state (for example, 6s1/2) to get all available E1 matrix elements for this state.  </li>
+      <li>Click on the Print button to print the table.  </li>
+      <li>Click on the Excel button to download the data. Note that the downloaded file will also contain
+      separate columns of the values and their uncertainties for all properties. </li></p>
+    </ul>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+  <div id="PgInfo" class="jqmodal" style = " bottom: 0% !important;">
+    <ul>
+    <p><li>Click on a column header to sort the table in ascending/descending header value </li>
+      <li>Use the "Search" bar to find a specific value/state </li>
+      <li>Minimum/Maximum wavelengths limit table to specified wavelengths</li>
+      <li>Click on the Print button to print the tables. </li>
+      <li>Click on the Excel button to download the data. Note that the downloaded file will also contain
+      separate columns of the values and their uncertainties for all properties. </li></p>
+    </ul>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+  <style>
+  navpol {
+    float: left;
+    text-align: center;
+    width: 30%;
+    background:  rgb(255, 255, 255);
+    padding: 5px;
+    height: 800px;
+
+  }
+  </style>
+<body>
+
+
+
+  <nav class="navbar2" >
+
+    <div class="sidebar-collapse">
+      <h1 style = "color:white; font-size: 27px; padding-left: 10px"> Cs</h1>
+    </div>
+
+    <button class="btn2 noprint"  style="margin:5px 5px 5px 5px;width:175px; font-size: 15px;" onclick="location.href = 'Cs1.html';">Matrix elements</button>
+    <button class="btn2 noprint disabled"  style="margin:5px 5px 5px 5px;width:160px; font-size: 15px; cursor: not-allowed; ">Transition rates</button>
+    <button class="btn2  noprint"  style="margin:5px 5px 5px 5px;width:140px; font-size: 15px; word-wrap:break-word;" onclick="location.href = 'Cs1Polarizability.html';">Polarizability</button>
+    <button class="btn2 noprint"  style="margin:5px 5px 5px 5px;width:140px; font-size: 15px;" onclick="location.href = 'Cs1Nuclear.html';">Nuclear data</button>
+    <button class="btn2 noprint"  style="margin:5px 5px 5px 5px;width:190px; font-size: 15px;" onclick="location.href = 'Cs1Hyperfine.html';">Hyperfine constants</button>
+    <div class="main-logo noprint"></div>
+
+
+
+  <div class="small-logo noprint"><a target = "_blank" href="https://physics.nist.gov/cgi-bin/ASD/energy1.pl?de=0&spectrum=Cs+I&submit=Retrieve+Data&units=0&format=0&output=0&page_size=15&multiplet_ordered=0&conf_out=on&term_out=on&level_out=on&unc_out=1&j_out=on&lande_out=on&perc_out=on&biblio=on&temp=">
+    <img id="sc2logo" src="https://i.ibb.co/bP87x6w/asd6round.png" alt="[ASD data]" title="NIST database"></a></div>
+</nav>
+
+
+
+  <div align=center x:publishsource="Excel" style="margin: 0 auto; width:90%;">
+    <table border="0" cellspacing="5" cellpadding="5">
+      <tbody>
+        <tr>
+          <td> <a button type="button" class=" btn2 noprint back" href="Cs1TranAuto.html" style = "padding-left: 23px; padding-right: 23px;" > Back </button> </td>
+          <td> <button class="button_export_excel noprint"  aria-label="Export"  type="button" title="Download the data in excel" id="exporttable"
+          style = "padding-left: 23px; padding-right: 23px;">Excel </button> </td>
+          <td> <button type="button" class=" btn2 noprint" onclick="printPage()" title = "Print the data you see on the screen" id = "printtable"
+          style = "padding-left: 23px; padding-right: 23px;" > Print </button> </td>
+          <td> <button class="button_export_csv noprint"  aria-label="Export"  type="button" title="Download the data into csv with separate columns for values and uncertanties"
+            id="csvtable"> Csv </button> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <div align=left x:publishsource="Excel" style="margin: 0 auto; width:90%;" class = "noprint">
+    <table border="0" cellspacing="5" cellpadding="5">
+      <tbody>
+        <tr>
+          <td >Minimum wavelength(nm):</td>
+          <td ><input type="text" id="min" name="min"></td>
+      </tr>
+      <tr>
+          <td>Maximum wavelength(nm):</td>
+          <td><input type="text" id="max" name="max"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  </tbody>
+  </table>
+
+  <P align=center id="demo" > </P>
+  <table id="htmltable" class="table table-striped table-bordered display" style="width:100%">
+	<thead>

@@ -1,0 +1,105 @@
+</tbody>
+</table>
+</div>
+
+
+
+<script type="text/javascript">
+  var table1 = document.getElementById("table1"); /* nuclear */
+  var table2 = document.getElementById("table2"); /* hyperfine */
+  var table3 = document.getElementById("table3"); /* metastable top */
+  var table4 = document.getElementById("table4"); /* metastable bottom */
+
+  var btnTab1 = document.getElementById("showTable1");
+  var btnTab2 = document.getElementById("showTable2");
+  var btnTab3 = document.getElementById("showTable3");
+
+  btnTab1.onclick = function() {
+    table1.style.display = "table";
+    table2.style.display = "none";
+    table3.style.display = "none";
+    table4.style.display = "none";
+    document.getElementById("printtable").style.display = '';
+    document.getElementById("exporttable").style.display = 'none';
+
+    var inp = String(this.value);
+    inp = inp.bold();
+    document.getElementById("demo").innerHTML = inp;
+  }
+
+  btnTab2.onclick = function() {
+    table1.style.display = "none";
+    table2.style.display = "table";
+    table3.style.display = "none";
+    table4.style.display = "none";
+    document.getElementById("printtable").style.display = '';
+    document.getElementById("exporttable").style.display = 'none';
+
+    var inp = String(this.value);
+    inp = inp.bold();
+    document.getElementById("demo").innerHTML = inp;
+  }
+
+  btnTab3.onclick = function() {
+    table1.style.display = "none";
+    table2.style.display = "none";
+    table3.style.display = "table";
+    table4.style.display = "table";
+    document.getElementById("printtable").style.display = '';
+    document.getElementById("exporttable").style.display = 'none';
+
+    var inp = String(this.value);
+    inp = inp.bold();
+    document.getElementById("demo").innerHTML = inp;
+  }
+    </script>
+
+     <script>
+    $(document).ready(function() {
+      $(".Ref1").click(function() {
+          var $row = $(this).closest("tr");    // Find the row
+          var $text = $row.find(".nr").text()+'<br><strong>DOI:</strong> ';//+ $row.find(".nr2").text(); // Find the text
+          var $text2 =  $row.find(".nr2").text(); // Find the text
+          var $text3= '<a href=\"'+$text2 + '\" target="_blank" class=\"tooltip-test\" title=\"Tooltip\">'+$text2+'\<\/a\>';
+          if ($text2 == '') { //no doi for this reference
+            $(".modal-body")[0].innerHTML= $row.find(".nr3").text();
+            }
+          else{
+            $(".modal-body")[0].innerHTML=$text+ ''+$text3 ;
+          }
+      });
+      $(".Ref2").click(function() {
+          var $row = $(this).closest("tr");    // Find the row
+          // var $text = $row.find(".nr3").text()+' <br>DOI: '+$row.find(".nr4").text(); // Find the text
+          // $(".modal-body")[0].innerHTML=$text;
+
+          var $text = $row.find(".nr3").text()+'<br><strong>DOI:</strong> ';//+ $row.find(".nr2").text(); // Find the text
+          var $text2 =  $row.find(".nr4").text(); // Find the text
+          var $text3= '<a href=\"'+$text2 + '\" target="_blank" class=\"tooltip-test\" title=\"Tooltip\">'+$text2+'\<\/a\>';
+          if ($text2 == '') { //no doi for this reference
+            $(".modal-body")[0].innerHTML= $row.find(".nr3").text();
+            }
+          else{
+            $(".modal-body")[0].innerHTML=$text+ ''+$text3 ;
+          }
+      });
+      });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+        });
+
+        </script>
+        <script>
+          // Tooltips Initialization
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</body>
+</html>

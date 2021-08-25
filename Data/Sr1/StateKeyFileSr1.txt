@@ -1,0 +1,16 @@
+key, state, html, j
+ 1, 5s2  1S0,    5s<sup>2</sup> <sup>1</sup>S<sub>0</sub>,  0
+ 2, 5s5p 3P0,    5s5p <sup>3</sup>P<sub>0</sub>,  0
+ 3, 5s5p 3P1,    5s5p <sup>3</sup>P<sub>1</sub>,  1
+ 4, 5s5p 3P2,    5s5p <sup>3</sup>P<sub>2</sub>,  2
+ 5, 5s4d 3D1,    5s4d <sup>3</sup>D<sub>1</sub>,  1
+ 6, 5s4d 3D2,    5s4d <sup>3</sup>D<sub>2</sub>,  2
+ 7, 5s4d 3D3,    5s4d <sup>3</sup>D<sub>3</sub>,  3
+ 8, 5s4d 1D2,    5s4d <sup>1</sup>D<sub>2</sub>,  2
+ 9, 5s5p 1P1,    5s5p <sup>1</sup>P<sub>1</sub>,  1
+10, 5s6s 3S1,    5s6s <sup>3</sup>S<sub>1</sub>,  1
+11, 5s6p 3P1,    5s6p <sup>3</sup>P<sub>1</sub>,  1
+12, 5s6p 1P1,    5s6p <sup>1</sup>P<sub>1</sub>,  1
+13, 5s5d 3D1,    5s5d <sup>3</sup>D<sub>1</sub>,  1
+14, 5p2  3P1,    5p<sup>2</sup> <sup>3</sup>P<sub>1</sub>,  1
+15, 5s7s 3S1,    5s7s <sup>3</sup>S<sub>1</sub>,  1

@@ -1,0 +1,36 @@
+</tbody>
+</table>
+</div>
+
+<div class="container center">
+  <table class="table center" id="table3"  data-name="listtable" cellpadding=0 cellspacing=0 width=500 style=' border: .5pt solid #4472C4; border-collapse:
+  collapse; width:250pt;'>
+      <thead>
+        <tr style="text-align: center;">
+          <th class=xl159427  align=center style='height:14.75pt;width:40pt;
+          font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+          none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+          border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+          background:#4472C4;mso-pattern:#4472C4 none; text-align: center; padding-left: 0pt;'> State </th>
+
+          <th class=xl159427  align=center style='height:14.75pt;width:100pt;
+          font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+          none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+          border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+          background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'> Property </th>
+
+
+
+          <th class=xl159427  align=center style='height:14.75pt;width:50pt;
+          font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+          none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+          border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+          background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'> Theory </th>
+
+
+
+
+      </thead>
+      <!-- duplicating transactions and only checking the first column -->
+      <!-- save_copy, main table-->
+      <tbody id="table_met">

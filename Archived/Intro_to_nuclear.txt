@@ -1,0 +1,946 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174267174-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-174267174-1');
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+          }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WPM5389');</script>
+      <!-- End Google Tag Manager -->
+<!-- responsive webpage -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+
+<!--Export Data-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569818907/jquery.table2excel.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--Export Data-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.production.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
+<!--bootstap-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="MDB\js\popper.min.js"></script>
+<!-- datatables -->
+<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<!-- Toggle Button -->
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<head>
+
+<!-- part that works for excel -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css"/>
+
+<script src = "https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src = "https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+<script src = "https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+
+<!-- pop up loaders -->
+
+
+<!-- jqeury modal -->
+<!-- <script src="https://cdn.statically.io/gh/Marrs-jin/WebDesign/main/modal_func.js"></script> -->
+<!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/Marrs-jin/WebDesign/main/modal_style.css"> -->
+<script src="modal_func.js"></script>
+<link rel="stylesheet" href="modal_style.css">
+
+<script>
+$(document).ready(function () {
+    var table = $('#htmltable3').DataTable({
+
+      paging: false,
+      dom: 'rtip',
+      info: false,
+      aaSorting: [],
+
+
+      buttons: [
+          {
+            extend: 'excelHtml5',
+            messageTop: 'Wavelengths are calculated using the NIST ASD database energies , unless marked with *',
+            filename: 'Fr1OtherData',
+              customizeData: function(data) {
+                for(var i = 0; i < data.body.length; i++) {
+                  // j goes through columns. skip first 2 (initial, final)
+                  for(var j = 0; j < data.body[i].length; j++) {
+                    if (j != 0 && j != 1 && j!= 4 && j!= 7  && j!= 10 && j!= 11 && j!= 14 && j!= 15 && j!= 16 && j!= 17)  {
+                      data.body[i][j] = Number(data.body[i][j]);
+                                            }
+                    else {
+                      data.body[i][j] = data.body[i][j];
+                          }
+          }
+        }
+      }
+
+          },
+          {
+              extend: 'csv'
+          },
+          {
+            extend: 'print'
+          }
+      ]
+
+    });
+$('.button_export_excel').click(() => {
+    $('#htmltable3').DataTable().buttons(0,0).trigger()
+});
+
+
+$('#min, #max').keyup( function() {
+    table.draw();
+} );
+});
+</script>
+
+<style type="text/css">
+
+    @media print
+    {
+    .noprint {display:none;}
+    .exporttable {display:none;}
+    .button {display: none;}
+    }
+    @media screen
+    {
+    /* ... */
+    }
+</style>
+<!-- Master States -->
+<style id="Cs Transitions_22755_Styles">
+    <!--table
+        {mso-displayed-decimal-separator:"\.";
+        mso-displayed-thousand-separator:"\,";}
+    </style>
+
+    <!--Transitions -->
+    <style id="Cs Transitions_20382_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";
+}
+
+</style>
+<!-- rgba(0, 191, 255, 1); -->
+<style type="text/css">
+#search {
+  background-color: rgba(0, 200, 255, 1);
+  border: none;
+  color: black;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:700;
+  font-style:normal;
+  text-decoration:none;
+  font-family:Calibri, sans-serif;
+  margin: 1px 1px;
+  cursor: pointer;
+  width:65;
+  height:25px;
+  border-radius: 10px;
+  box-shadow: 0 2px #999;
+}
+#search:hover {background-color:rgba(30, 144, 255, 1); }
+#search:active {
+background-color: rgba(16, 78, 139, 1);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+#search-clicked {
+background-color: rgb(50, 92, 79)
+}
+#search:focus {
+background-color:  rgba(30, 144, 255, 1);
+/* color: whitesmoke; */
+text-shadow: whitesmoke;
+/* border-style: double; */
+box-shadow: 0 3px #666;
+transform: translateY(2px);
+color: black;
+}
+
+</style>
+<style>
+ .btn {
+  background-color:rgb(222, 228, 222);
+  border: 1pt solid grey;
+  color: black;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 70px;
+
+}
+.Ref1 , .Ref2{
+    background-color:rgb(222, 228, 222);
+    width: fit-content;
+    height: 20px;
+    padding: 2px 2px;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: DodgerBlue;
+}
+/* Style the header */
+header {
+  background-color: #666;
+  margin: auto;
+  /* height: 123px; */
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  /* display: flex; */
+  justify-content: center;
+  position: relative;
+  width:100%;
+
+  /* display: flex; is what controls text not being in center */
+  vertical-align: middle;
+
+  /* margin: auto; width: 1007px; height: 123px; background: url(../images/logo.png) no-repeat 20px; background-color: #37352b; border: 1px solid #862209; */
+}
+.btn1 {
+  background-color: rgb(231, 200, 26);
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 5px;
+      box-shadow: 0 2px #999;
+}
+</style>
+
+<style>
+.button {
+  background-color: rgba(0, 200, 255, 1);
+  border: none;
+  color: black;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:700;
+  font-style:normal;
+  text-decoration:none;
+  font-family:Calibri, sans-serif;
+  margin: 1px 1px;
+  cursor: pointer;
+  width:65;
+  height:25px;
+  border-radius: 10px;
+  box-shadow: 0 2px #999;
+}
+.button:hover {
+  background-color:rgba(30, 144, 255, 1);
+  display: block; }
+.button:active {
+background-color: rgba(16, 78, 139, 1);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+.button-clicked {
+background-color: rgb(50, 92, 79)
+}
+.button:focus {
+background-color:  rgba(30, 144, 255, 1);
+/* color: whitesmoke; */
+text-shadow: whitesmoke;
+/* border-style: double; */
+box-shadow: 0 3px #666;
+transform: translateY(2px);
+color: black;
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Create two columns/boxes that floats next to each other */
+navpol { /* button left right */
+  float: left;
+  text-align: center;
+  width: 20%;
+  background:  rgb(255, 255, 255);
+  padding: 5px;
+  padding-right: 50px;
+  height: 800px;
+
+}
+
+
+/* article { /* table left right */
+/*  float: left;
+
+  padding: 0px 40px; /* also controls table left right */
+/*  width: 62%; /* controls where the data table is left or rigth */
+/*  background-color: #ffffff;
+/* } */
+aside {
+  float: left;
+  width: 0%;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media  (max-width:1000px) {
+  /* For laptops phones: */
+  navpol {
+    width:100%;
+    padding: 0px;
+
+    padding-right: 0px;
+    height: auto;
+  }
+
+
+  container{
+    width:100%;
+    padding: 0px;
+    }
+
+    .jqmodal {
+      left: 0% !important;
+      bottom: 0% !important;
+    }
+
+    .sidebar-collapse,
+    .navbar2,
+     {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+    }
+
+}
+</style>
+
+<style>
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 0px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    /* width:40%; */
+
+  }
+.btn2 {
+  background-color: rgba(0, 191, 255, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+
+}
+  .btn2:hover {
+    background-color: DodgerBlue;
+    text-decoration: none;
+  }
+
+  a.btn2{
+    background: #4CAF50;
+    -webkit-appearance: none;
+  }
+  a.btn2:hover{
+    background-color: #2a893e;
+    text-decoration: none;
+    -webkit-appearance: none;
+  }
+  input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+
+.button_export_excel {
+  background-color: rgba(0, 191, 255, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.button_export_excel:hover {
+  background-color: DodgerBlue;
+}
+
+/* Darker background on mouse-over */
+
+
+
+
+table#htmltable3 {
+  display: none;
+}
+
+td{
+    text-align: center;
+}
+</style>
+
+  <style>
+      .btn-primary{
+          height:20px;
+          font-size: 10px;
+          margin-top: 2px;
+          padding-top: 2px;
+      }
+  	.container{
+      	margin: 20px;
+      }
+  </style>
+<style>
+.label {
+   text-align: center;
+}
+</style>
+
+<style>
+.navbar2 {
+  width: 100%;
+
+  max-width: 100%;
+  vertical-align: middle;
+  margin: auto;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  height: 8%;
+  min-height: 8%;
+  max-height: 10%;
+
+
+}
+
+.main-logo {
+  flex: 1 0 0;
+  text-align: center;
+  padding-right: 23%;
+}
+#logo {
+
+  width: 100%;
+  height: auto;
+}
+.sidebar-collapse,
+.small-logo {
+  width: 100px;
+  padding-top: 50px;
+
+  padding-bottom: 50px;
+
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+
+  .sidebar-collapse,
+  .navbar2,
+   {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .btn2 {
+    height: auto;
+    max-height: 100%;
+    min-height: auto;
+  }
+  .small-logo{
+    height: auto;
+    max-height: 100%;
+    min-height: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .btn2 {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+
+  }
+  .small-logo{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    min-height: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .sidebar-collapse,
+  .navbar2,
+   {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+
+
+}
+</style>
+
+<style>
+/* sets the color of the background of the popup */
+.blocker{
+  background-color:rgba(0,0,0,0.5);
+}
+
+.jqmodal{
+  display:none;
+  vertical-align:middle;
+  position:relative;
+  z-index:2;
+
+  /* determines posiition of modal pop up */
+
+  left: 25% !important;
+  bottom: 20% !important;
+
+
+}
+
+</style>
+
+
+
+
+<script>
+function goBack() {
+  window.location.href = "index.html";
+}
+function printPage() {
+
+window.print();
+
+}
+</script>
+
+<script>
+
+function load() {
+document. getElementById("htmltable").style.display="none";
+
+}
+</script>
+
+
+<title>Fr</title>
+</head>
+
+<body onload="load()" onclick="getFocus();">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPM5389"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Reference:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Hey There
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <body onload="load()" onclick="getFocus();">
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item dropdown ">
+      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" style='color: white'>Elements</a>
+      <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="Li1TranAuto.html">Li</a>
+        <a class="dropdown-item" href="Na1TranAuto.html">Na</a>
+        <a class="dropdown-item" href="K1TranAuto.html">K</a>
+        <a class="dropdown-item" href="Rb1TranAuto.html">Rb</a>
+        <a class="dropdown-item" href="Cs1TranAuto.html">Cs</a>
+        <a class="dropdown-item active" href="Fr1TranAuto.html">Fr</a>
+        <a class="dropdown-item" href="Be2TranAuto.html">Be+</a>
+        <a class="dropdown-item" href="Mg2TranAuto.html">Mg+</a>
+        <a class="dropdown-item" href="Ca2TranAuto.html">Ca+</a>
+        <a class="dropdown-item" href="Sr2TranAuto.html">Sr+</a>
+        <a class="dropdown-item" href="Ba2TranAuto.html">Ba+</a>
+        <a class="dropdown-item" href="Ra2TranAuto.html">Ra+</a>
+      </div>
+    </li>
+
+    <li class="nav-item" >
+      <a class="nav-link "  style = 'color: white' href="team.html"> Our team</a>
+    </li>
+  <li class="nav-item" >
+    <a class="nav-link "  style = 'color: white' href="about.html">About the project</a>
+  </li>
+  </ul>
+  <a type = "button" class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px;" href="#PgInfo" rel="jqmodal:open">Help</a>
+  <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'citation.html';">Citation info</button>
+  <button class="btn2 btn-outline-success my-2 my-sm-0"  style="margin:5px 5px 5px 5px" onclick="location.href = 'feedback.html';">Feedback</button>
+  </div>
+  </nav>
+
+  <nav class="navbar2" >
+
+
+    <button class="btn2 noprint"  style="margin:5px 5px 5px 5px;width:140px; font-size: 13px;" onclick="location.href = 'Fr1.html';">Matrix elements</button>
+    <button class="btn2 noprint"  style="margin:5px 5px 5px 5px;width:140px; font-size: 13px;" onclick="location.href = 'Fr1TranAuto.html';">Transition rates</button>
+    <button class="btn2  noprint"  style="margin:5px 5px 5px 5px;width:120px; font-size: 13px; word-wrap:break-word;" onclick="location.href = 'Fr1Polarizability.html';">Polarizability</button>
+
+
+    <div class="main-logo noprint"><h1 style = "color:white; font-size: 27px;"> Other data for Fr<sup></sup> </h1></div>
+
+    <div class="small-logo noprint"><a target = "_blank" href="https://physics.nist.gov/cgi-bin/ASD/energy1.pl?de=0&spectrum=Fr+I&submit=Retrieve+Data&units=0&format=0&output=0&page_size=15&multiplet_ordered=0&conf_out=on&term_out=on&level_out=on&unc_out=1&j_out=on&lande_out=on&perc_out=on&biblio=on&temp=">
+      <img id="sc2logo" src="https://i.ibb.co/bP87x6w/asd6round.png" alt="[ASD data]" title="NIST database"></a></div>
+  </nav>
+
+  <navpol class="noprint" style = "text-align: center;">
+
+
+      <div align="center" style = "overflow-x: hidden; text-align: center; width: auto; min-width: 150pt;" >
+        <br>
+        <h5 class="noprint" style = "padding-left: 20pt; width: auto; "><b>Click on a button to see data </b></h5>
+        <ul style="list-style-type:none;">
+          <li>
+            <br>
+            <button class="btn2 noprint" id="showTable1" value="Nuclear data" onmouseout="this.innerHTML='Nuclear data'" style='width:120pt; text-align: center; color: black;'>Nuclear data</button>
+          </li>
+          <li>
+            <br>
+            <button class="btn2 noprint"  id="showTable2" value="Hyperfine constants A (MHz)" onmouseout="this.innerHTML='Hyperfine constants A (MHz)'" style='width:120pt; color: black;'>Hyperfine constants A (MHz)</button>
+          </li>
+          <li>
+            <br>
+            <button class="btn2 noprint " id="showTable3" value="Metastable state data" style = "visibility: hidden;" style = "visibility: hidden;"  onmouseout="this.innerHTML='Metastable state data'" style='width:120pt; color: black;'>Metastable state data </button>
+          </li>
+          <li>
+            <br> <b></b><!--metastable breaker-->
+          </li>
+        </ul>
+          </div>
+        </navpol>
+
+
+
+  <div id="PgInfo" class="jqmodal" style = " bottom: 0% !important;">
+    <ul>
+    <p>
+      <li>Click on a "Nuclear data" button to display properties of isotopes with a half-life exceeding 10 minutes
+        (3 minutes for Fr). </li>
+      <li>Click on a "Hyperfine constant A" button to display the values of magnetic-dipole hyperfine constants A
+        (in MHz) complied from published papers.</li>
+      <li>If the atom/ion has metastable states a "Metastable state properties" button will show with a list of
+        metastable states. Click on the button to display the data for dominant electric quadrupole (E2) and
+        magnetic dipole (M1) transitions, lifetimes, and quadrupole moments.</li>
+      <li>Click on a "Ref" button to display the sources of the data.</li>
+      <li>Click on the "Print" button to print the tables you see on the screen. </li>
+    </p>
+    </ul>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+  <div id="IsoInfo" class="jqmodal" >
+    <p>
+      Isotopes with half life more than 3 minutes are listed Fr, more than 10 minutes for all other cases.
+    </p>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+  <div id="hlflifeInfo" class="jqmodal" >
+    <p>
+      N.J. Stone, Table of recommended nuclear magnetic dipole moments: Part I, long-lived states, INDC(NDS)-079
+      Available <a target = "_blank" href = "https://www-nds.iaea.org/publications/indc/indc-nds-0794.pdf"> online </a>
+    </p>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+  <div id="AbundInfo" class="jqmodal" >
+    <p>
+      Juris Meija et al., Isotopic compositions of the elements 2013 (IUPAC Technical Report), Pure Appl. Chem.  88, 293 (2016),
+      <a target = "_blank" href = "https://doi.org/10.1515/pac-2015-0503"> DOI </a>
+    </p>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+  <div id="RmsInfo" class="jqmodal" >
+    <p>
+      I. Angeli, K.P. Marinova,Table of experimental nuclear ground state charge radii: An update, Atomic Data and Nuclear Data Tables 99, 69 (2013),
+      <a target = "_blank" href = "https://doi.org/10.1016/j.adt.2011.12.006"> DOI, </a> <a target = "_blank" href = "https://www-nds.iaea.org/radii"> Weblink </a>
+    </p>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+  <div id="QuadInfo" class="jqmodal" >
+    <p>
+      N.J. Stone, Table of nuclear electric quadrupole moments, At. Data Nucl. Data Tables 111-112, 1 (2016),
+      <a target = "_blank" href = " https://doi.org/10.1016/j.adt.2015.12.002"> DOI </a>
+    </p>
+    <a href = "about.html" target="_blank"> Learn more about these data</a>
+    <p class="" style="margin: 4px;"></p>
+    <a href="#" rel="jqmodal:close">Close</a>
+  </div>
+
+
+
+<article  >
+  <div class="container center" >
+
+  <br>
+<!-- <h1 id="transitionType" style='color:black;font-family:Calibri;font-size:12.0pt;font-weight:800;
+font-style:normal'>Cs Transitions</h1> -->
+
+
+<P align=center id="demo" style="font-size:25px"> </P>
+
+<div class="export btn-group" align = center>
+    <button type="button" class=" btn2 noprint" onclick="printPage()" title = "Print the data you see on the screen" id = "printtable" style =' display: none;'> Print data </button>
+    <button class="button_export_excel ml-3 noprint"  aria-label="Export"  type="button" title="Download the data in excel with separate columns for values and uncertanties" id="exporttable" style =' display: none;'> Excel </button>
+</div>
+<p></p>
+
+<style>
+    #table2, #table1, #table3, #table4 {
+display: none;
+}
+</style>
+</article>
+
+
+
+<div class="container center">
+  <table class="table center" id="table1"  data-name="listtable" cellpadding=0 cellspacing=0 width=500 style=' border: .5pt solid #4472C4; border-collapse:
+  collapse; width:525pt;'>
+      <thead>
+        <tr style="text-align: center;">
+          <th class=xl159427 width=200  style='height:14.75pt;width:138pt;
+          font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+          none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+          border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+          background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'> Isotope <a type="button" href="#IsoInfo" rel="jqmodal:open" class="btn1 btn-warning noprint" data-container="body"
+          data-toggle="tooltip" title="Isotopes with half life more than 3 minutes are listed Fr, more than 10 minutes for all other cases."
+           data-placement="right">info </a> <br><br> </th>
+
+        <th class=xl159427  align=center style='height:14.75pt;width:132pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none'>&nbsp;&nbsp; Mass number</th>
+
+        <th class=xl159427  align=center style='height:14.75pt;width:132pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none'>&nbsp;&nbsp;Symbol</th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>Half-life <a type="button" href="#hlflifeInfo" rel="jqmodal:open" class="btn1 btn-warning noprint"
+        data-container="body" data-toggle="tooltip" title="N.J. Stone, Table of recommended nuclear magnetic dipole moments: Part I, long-lived states, INDC(NDS)-079"
+        data-placement="right" >info </a><br><br></th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:120pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:.5pt;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'> Natural abundance (%) <a type="button" href="#AbundInfo" rel="jqmodal:open" class="btn1 btn-warning noprint"
+        data-container="body" data-toggle="tooltip" title="Juris Meija et al., Isotopic compositions of the elements 2013 (IUPAC Technical Report), Pure Appl. Chem.  88, 293 (2016)" data-placement="right" >
+          info
+        </a><br></th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'> Nuclear spin <br><br> </th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>Rms radii (fm) <a type="button" href="#RmsInfo" rel="jqmodal:open" class="btn1 btn-warning noprint" data-container="body"
+        data-toggle="tooltip" title="I. Angeli, K.P. Marinova,Table of experimental nuclear ground state charge radii:
+An update, Atomic Data and Nuclear Data Tables 99, 69 (2013)"
+        data-placement="right" >info </a><br><br></th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Rms radii (fm) </th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Uncertainty (fm)
+        </th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>Magnetic moment (&mu;<sub>N</sub>) <a type="button" href="#hlflifeInfo" rel="jqmodal:open" class="btn1 btn-warning noprint"
+        data-container="body" data-toggle="tooltip" title="N.J. Stone, Table of recommended nuclear magnetic dipole moments: Part I,
+long-lived states, INDC(NDS)-079" data-placement="right">
+          info
+        </button></th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Magnetic moment (&mu;<sub>N</sub>) </th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Uncertainty (&mu;<sub>N</sub>) </th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>Quadrupole moment (b) <a type="button" href="#QuadInfo" rel="jqmodal:open" class="btn1 btn-warning noprint"
+        data-container="body" data-toggle="tooltip" title="N.J. Stone, Table of nuclear electric quadrupole moments, At. Data Nucl. Data Tables 111-112, 1 (2016)"
+        data-placement="right">
+          info
+        </button></th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Quadrupole moment (b) </th>
+
+        <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+        font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+        none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+        border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+        background:#4472C4;mso-pattern:#4472C4 none; display: none;'>Uncertainty (b) </th>
+
+      </thead>
+      <tbody id="table_nuc">

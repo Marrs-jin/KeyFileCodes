@@ -1,0 +1,5 @@
+ grep "res "    FILES-E1/* >results
+ grep "zvw"     FILES-E1/* >df
+ grep "term a"  FILES-E1/* >terma
+ grep "term c"  FILES-E1/* >termc
+ grep "term d"  FILES-E1/* >termd

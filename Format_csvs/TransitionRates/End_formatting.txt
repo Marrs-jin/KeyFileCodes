@@ -1,0 +1,198 @@
+</div>
+        </div>
+      </div>
+  </article>
+  <aside>
+  </aside>
+</body>
+</html>
+
+
+
+<script>
+function search_table(name) {
+var input, filter, table, tr, td, i,alltables;
+alltables = document.querySelectorAll("table[data-name=listtable]");
+othertables = document.querySelectorAll("table[data-name=listtable_meta]");
+input =  name;
+
+var index = /[a-z]/i.exec(input).index;
+after = input.substr(index+1);
+before = input.substring(0, index);
+letter = input[index];
+comb = before + letter + '<sub>' + after + '</sub>';
+
+input = comb;
+/* input = "7s<sub>1/2</sub>" */
+filter = input.toUpperCase();
+
+alltables.forEach(function(table){
+table.style.display = "block";
+/*this gets rid of excel table visibility */
+if (table.id == 'htmltable3') {
+  table.style.display = 'none'
+}
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+td = tr[i].getElementsByTagName("td")[0];
+if (td) {
+if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+tr[i].style.display = "";
+} else {
+tr[i].style.display = "none";
+}
+}
+}
+});
+
+othertables.forEach(function(table){
+table.style.display = "block";
+/*this gets rid of excel table visibility */
+table.style.display = 'none'
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+td = tr[i].getElementsByTagName("td")[0];
+if (td) {
+if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+tr[i].style.display = "";
+} else {
+tr[i].style.display = "none";
+}
+}
+}
+});
+}
+</script>
+
+<script>
+function search_table_meta(name) { /* for metastable states */
+  var input, filter, table, tr, td, i,alltables;
+  alltables = document.querySelectorAll("table[data-name=listtable_meta]");
+  othertables = document.querySelectorAll("table[data-name=listtable]");
+  input =  name;
+
+
+  input = name;
+  var index = /[a-z]/i.exec(input).index;
+  after = input.substr(index+1);
+  before = input.substring(0, index);
+  letter = input[index];
+  comb = before + letter + '<sub>' + after + '</sub>';
+
+  input = comb;
+  /* input = "7s<sub>1/2</sub>" */
+  filter = input.toUpperCase();
+
+  alltables.forEach(function(table){
+  table.style.display = "block";
+  /*this gets rid of excel table visibility */
+  if (table.id == 'htmltable3') {
+    table.style.display = 'none'
+  }
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+  td = tr[i].getElementsByTagName("td")[0];
+  if (td) {
+  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+  tr[i].style.display = "";
+  } else {
+  tr[i].style.display = "none";
+  }
+  }
+  }
+  });
+
+  othertables.forEach(function(table){
+  table.style.display = "block";
+  /*this gets rid of excel table visibility */
+  table.style.display = 'none'
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+  td = tr[i].getElementsByTagName("td")[0];
+  if (td) {
+  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+  tr[i].style.display = "";
+  } else {
+  tr[i].style.display = "none";
+  }
+  }
+  }
+  });
+  }
+</script>
+
+<script>
+
+$(".button").click(function(){
+    var inp = String(this.value);
+    var index = /[a-z]/i.exec(inp).index;
+    after = inp.substr(index+1);
+    before = inp.substring(0, index);
+    letter = inp[index];
+    comb = before + letter + '<sub>' + after + '</sub>';
+    inp = comb
+    /* top part */
+    document.getElementById("demo").style.fontSize = "large";
+    document.getElementById("demo").style.fontWeight = "bold";
+    document.getElementById("demo").innerHTML = inp;
+
+
+    document.getElementById("printtable").style.display = '';
+    document.getElementById("exporttable").style.display = '';
+    document.getElementById("csvtable").style.display = '';
+});
+
+
+$(document).ready(function() {
+      $(".Ref1").click(function() {
+          var $row = $(this).closest("tr");    // Find the row
+          var $text = $row.find(".nr").text()+'<br><strong>DOI:</strong> ';//+ $row.find(".nr2").text(); // Find the text
+          var $text2 =  $row.find(".nr2").text(); // Find the text
+          if ($text2 == 'nan') { //test if nan, insert blank if so
+                $text2 = '';
+                $text = $row.find(".nr").text();
+            }
+          var $text3= '<a href=\"'+$text2 + '\" target="_blank" class=\"tooltip-test\" title=\"Tooltip\">'+$text2+'\<\/a\>';
+          var $text_br = '<br'
+
+
+            // var $text = $row.find(".nr3").text()+' <br>DOI: '+$row.find(".nr4").text(); // Find the text
+            // $(".modal-body")[0].innerHTML=$text;
+
+            var $textt = $row.find(".nr3").text()+'<br><strong>DOI:</strong> ';//+ $row.find(".nr2").text(); // Find the text
+            var $text22 =  $row.find(".nr4").text(); // Find the text
+            if ($text22 == 'nan') { //test if nan, insert blank if so
+                  $text22 = '';
+                  $textt = $row.find(".nr3").text();
+              }
+            var $text33= '<a href=\"'+$text22 + '\" target="_blank" class=\"tooltip-test\" title=\"Tooltip\">'+$text22+'\<\/a\>';
+
+
+
+          $(".modal-body")[0].innerHTML= $text+ ''+$text3  + '<br><br>' + ''+$textt+ ''+$text33 ;
+          // test if there is no second REF and empty "DOI:". Then just have dialog box show first reference
+          if ($textt == '<br><strong>DOI:</strong> ') {
+            $(".modal-body")[0].innerHTML= $text+ ''+$text3;
+            }
+          // test if there is no first REF and empty "DOI:". Then just have dialog box show second reference
+          else if ($text == '<br><strong>DOI:</strong> ') {
+            $(".modal-body")[0].innerHTML= $textt+ ''+$text33;
+            }
+          });
+      });
+    </script>
+
+
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+
+    </script>
+    <script>
+      // Tooltips Initialization
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>

@@ -1,0 +1,48 @@
+<table class="table center" id="htmltable"  data-name="listtable" cellpadding=0 cellspacing=0 width=500 style=' border: .5pt solid #4472C4; border-collapse:
+collapse;table-layout:fixed; display: none; width:550pt'>
+
+<thead>
+  <tr style="text-align: center;">
+  <th colspan=2 height=20 class=xl159427 align=center width=77 style='height:15.0pt;
+  width:100pt;font-size:13.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:Calibri, sans-serif;
+  border-top:.5pt solid #4472C4;border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;
+  border-left:.5pt solid #4472C4;background:#4472C4;mso-pattern:#4472C4 none; text-align: center; padding-left: 0pt;'>&nbsp;&nbsp;Transition<br>&nbsp;</th>
+
+
+  <th class=xl159427 width=200  style='height:14.75pt;width:158pt;
+  font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+  border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+  background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>Matrix&nbsp;element<br>(a.u.) <a type="button" href="#MatInfo" rel="jqmodal:open" class="btn1 btn-warning noprint" data-container="body" data-toggle="tooltip" title="Absolute values of reduced electric-dipole matrix elements are listed in atomic units. Uncertainties are listed in parentheses." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+    info
+  </a></th>
+
+
+  <th class=xl159427  align=center style='height:14.75pt;width:132pt;
+  font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+  border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+  background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>&nbsp;&nbsp;  Wavelength<br>(nm) <a type="button" href="#WaveInfo" rel="jqmodal:open" class="btn1 btn-warning noprint" data-container="body" data-toggle="tooltip" title="Wavelengths are calculated using the NIST ADS database energies , unless marked with *.
+  [1] Kramida, A., Ralchenko, Yu., Reader, J. and NIST ASD Team (2019). NIST Atomic Spectra Database (version 5.7.1), [Online]. Available:https://physics.nist.gov/asd. National Institute of Standards and Technology, Gaithersburg, MD. DOI:https://doi.org/10.18434/T4W30F" data-placement="top" data-html="true" >
+    info
+  </a></th>
+
+
+  <th class=xl159427  align=center style='height:14.75pt;width:132pt;
+  font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+  border-right:.5pt solid #2F75B5;border-bottom:.5pt solid #4472C4;border-left:none;
+  background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>&nbsp;&nbsp;Transition&nbsp;rate<br>(s<sup>-1</sup>) <a type="button" href="#TRInfo" rel="jqmodal:open" class="btn1 btn-warning noprint" data-container="body" data-toggle="tooltip" title="Calculated Transition rates using theory values, except when marked with an *. In this case the value was pulled from experiment." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+	info </a></th>
+
+  <th class=xl159427  align=center style='height:14.75pt;width:132pt;
+  font-size:13.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:.5pt solid #2F75B5;
+  border-right:none;border-bottom:.5pt solid #4472C4;border-left:none;
+  background:#4472C4;mso-pattern:#4472C4 none; text-align: center;'>&nbsp;&nbsp;Branching&nbsp;ratio<br> <a type="button" href="#BRInfo" rel="jqmodal:open" class="btn1 btn-warning noprint" data-container="body" data-toggle="tooltip" title="Calculated Branching Rates using theory values, except when marked with an *. In this case the value was pulled from experiment." data-placement="right" data-content="Absolute values of reduced electric-dipole matrix elements and their uncertainties are listed in atomic units. Uncertainties are listed in parenthesis.">
+  	info </a></th>
+</thead>
+<!-- duplicating transactions and only checking the first column -->
+<!-- save_copy, main table-->
+<tbody id="cs_table">

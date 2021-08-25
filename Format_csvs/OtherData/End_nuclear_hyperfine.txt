@@ -1,0 +1,54 @@
+</tbody>
+</table>
+</div>
+
+
+     <script>
+    $(document).ready(function() {
+      $(".Ref1").click(function() {
+          var $row = $(this).closest("tr");    // Find the row
+          var $text = $row.find(".nr").text()+'<br><strong>DOI:</strong> ';//+ $row.find(".nr2").text(); // Find the text
+          var $text2 =  $row.find(".nr2").text(); // Find the text
+          var $text3= '<a href=\"'+$text2 + '\" target="_blank" class=\"tooltip-test\" title=\"Tooltip\">'+$text2+'\<\/a\>';
+          if ($text2 == '') { //no doi for this reference
+            $(".modal-body")[0].innerHTML= $row.find(".nr3").text();
+            }
+          else{
+            $(".modal-body")[0].innerHTML=$text+ ''+$text3 ;
+          }
+      });
+      $(".Ref2").click(function() {
+          var $row = $(this).closest("tr");    // Find the row
+          // var $text = $row.find(".nr3").text()+' <br>DOI: '+$row.find(".nr4").text(); // Find the text
+          // $(".modal-body")[0].innerHTML=$text;
+
+          var $text = $row.find(".nr3").text()+'<br><strong>DOI:</strong> ';//+ $row.find(".nr2").text(); // Find the text
+          var $text2 =  $row.find(".nr4").text(); // Find the text
+          var $text3= '<a href=\"'+$text2 + '\" target="_blank" class=\"tooltip-test\" title=\"Tooltip\">'+$text2+'\<\/a\>';
+          if ($text2 == '') { //no doi for this reference
+            $(".modal-body")[0].innerHTML= $row.find(".nr3").text();
+            }
+          else{
+            $(".modal-body")[0].innerHTML=$text+ ''+$text3 ;
+          }
+      });
+      });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+        });
+
+        </script>
+        <script>
+          // Tooltips Initialization
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</body>
+</html>
